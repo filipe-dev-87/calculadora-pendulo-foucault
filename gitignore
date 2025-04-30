@@ -1,0 +1,17 @@
+
+# Arquivos temporários de edição
+*.log
+*.tmp
+*.swp
+
+# Arquivos de sistema (gerados automaticamente em alguns SOs)
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# Backup automático de alguns editores
+*.bak
+*.old
+*.orig
+
+# Evita arquivos ocultos de upload acidental
+.*~
