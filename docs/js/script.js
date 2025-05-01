@@ -11,9 +11,7 @@ function mensagemErro(mensagem) {
 }
 
 function calcular() {
-
 	const latitude = parseFloat(document.getElementById('latitude').value.replace(',', '.'));
-
 	if(isNaN(latitude) || latitude < -90 || latitude > 90) {
 		mensagemErro('Por favor, insira uma latitude válida entre -90° e 90°.');
 		return;
@@ -24,7 +22,7 @@ function calcular() {
 	
 	if(seno === 0) {
 		mostrarResultado('No Equador, o plano de oscilação não gira (tempo = infinito).');
-	} else {
+	}else {
 		const tempo = 24 / seno;
 		mostrarResultado(`Na latitude ${latitude}°, o plano de oscilação gira completamente em aproximadamente ${tempo.toFixed(2)} horas.`);
 	}
