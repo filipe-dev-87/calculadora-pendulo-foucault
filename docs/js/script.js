@@ -1,7 +1,7 @@
 function mostrarResultado(mensagem) {
-    const resultado = document.getElementById('resultado');
-    resultado.style.color = 'green';
-    resultado.innerText = mensagem;
+	const resultado = document.getElementById('resultado');
+	resultado.style.color = 'green';
+	resultado.innerText = mensagem;
 }
 
 function mensagemErro(mensagem) {
@@ -19,7 +19,7 @@ function calcular() {
 
 	const rad = latitude * (Math.PI / 180);
 	const seno = Math.sin(rad);
-	
+
 	if(seno === 0) {
 		mostrarResultado('No Equador, o plano de oscilação não gira (tempo = infinito).');
 	}else {
